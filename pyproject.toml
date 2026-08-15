@@ -1,0 +1,29 @@
+[project]
+name = "agentic-ai"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Temmytope-seun", email = "temmytope60@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "langchain>=0.3.0",
+    "langchain-core>=1.0.0",
+    "langchain-google-genai>=4.2.2",
+    "langchain-groq>=0.3.0",
+    "python-dotenv>=1.2.1",
+    "streamlit>=1.57.0",
+    "ipykernel>7.2.0",
+    "notebook>=7.5.6",
+    "chromadb",
+    "pypdf>=6.11.0",
+    "langchain-community>=0.4.1"
+]
+
+[project.scripts]
+agentic-ai = "agentic_ai:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
